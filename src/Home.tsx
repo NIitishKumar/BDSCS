@@ -116,26 +116,26 @@ const GreenfieldAcademyHomepage: React.FC = () => {
 
   const testimonials: TestimonialCard[] = [
     {
-      name: "Sarah Johnson",
+      name: "Priya Sharma",
       role: "Happy Parent",
       content:
-        "Greenfield Academy has been a dream come true for our family. The teachers genuinely care and my daughter loves going to school every day!",
+        "BDS Convent School has been a wonderful choice for our family. The teachers genuinely care and my son loves going to school every day!",
       rating: 5,
       avatar: "👩‍💼",
     },
     {
-      name: "Michael Chen",
+      name: "Rahul Kumar",
       role: "Proud Alumni",
       content:
-        "The creativity and critical thinking skills I developed here have been my superpowers in college and my career. Forever grateful!",
+        "The values and education I received at BDS Convent School have been my foundation for success. The school truly shapes character along with academics!",
       rating: 5,
       avatar: "🎓",
     },
     {
-      name: "Lisa Rodriguez",
+      name: "Sunita Devi",
       role: "Community Member",
       content:
-        "The warm, inclusive community and innovative teaching methods make Greenfield Academy truly special. Highly recommend!",
+        "The warmth, care, and excellent education provided by BDS Convent School makes it the best choice in Sikandrabad. Highly recommend!",
       rating: 5,
       avatar: "🌟",
     },
@@ -143,38 +143,38 @@ const GreenfieldAcademyHomepage: React.FC = () => {
 
   const news: NewsItem[] = [
     {
-      title: "Amazing Science Fair Winners! 🏆",
+      title: "Annual Science Exhibition Success! 🏆",
       date: "August 1, 2025",
       category: "Academic Achievement",
       excerpt:
-        "Our brilliant students showcased incredible innovation with projects that impressed judges nationwide!",
+        "Our talented students showcased amazing science projects and innovation at the annual exhibition!",
       color: "bg-gradient-to-r from-blue-500 to-indigo-600",
     },
     {
-      title: "New Creative Arts Center Opens! 🎨",
+      title: "New Computer Lab Inauguration! 💻",
       date: "July 28, 2025",
-      category: "Campus News",
+      category: "Infrastructure",
       excerpt:
-        "A beautiful new space for music, art, and theater that will inspire creativity for years to come!",
+        "State-of-the-art computer lab with latest technology to enhance digital learning experience!",
       color: "bg-gradient-to-r from-pink-500 to-rose-600",
     },
     {
-      title: "Summer Reading Adventure Success! 📚",
+      title: "Cultural Program Grand Success! 🎭",
       date: "July 25, 2025",
-      category: "Student Life",
+      category: "Cultural Activities",
       excerpt:
-        "Record-breaking participation in our reading program with students exploring amazing new worlds!",
+        "Students presented beautiful cultural performances showcasing talent and creativity!",
       color: "bg-gradient-to-r from-green-500 to-emerald-600",
     },
   ];
 
   const achievements: string[] = [
-    "Top 5% Academic Performance Nationally 🏅",
-    "98% College Acceptance Rate 🎯",
-    "Award-Winning Arts & Music Programs 🎭",
-    "State Championship Athletics 🏆",
-    "STEM Innovation Excellence 🚀",
-    "Outstanding Community Service 💫",
+    "Recognized for Academic Excellence 🏅",
+    "Outstanding College Preparation Program 🎯",
+    "Award-Winning Arts & Cultural Programs 🎭",
+    "Excellence in Sports & Athletics 🏆",
+    "Strong Foundation in Science & Technology 🚀",
+    "Community Service Leadership 💫",
   ];
 
   const coreValues: {
@@ -214,18 +214,18 @@ const GreenfieldAcademyHomepage: React.FC = () => {
     <div className="min-h-screen bg-gradient-to-br from-blue-50 via-white to-purple-50">
       {/* Header */}
       <header className="bg-white/90 backdrop-blur-md shadow-lg border-b border-blue-100 sticky top-0 z-50 transition-all duration-300">
-        <div className="w-full sm:px-6 lg:px-8">
-          <div className="flex justify-between items-center py-4 mx-auto">
+        <div className="w-full px-4 sm:px-6 lg:px-8">
+          <div className="flex justify-between items-center py-4 max-w-7xl mx-auto">
             <div className="flex items-center group">
               <div className="w-12 h-12 bg-gradient-to-br from-blue-500 via-purple-500 to-pink-500 rounded-xl flex items-center justify-center shadow-lg transform group-hover:scale-110 transition-transform duration-300">
-                <span className="text-white font-bold text-xl">GA</span>
+                <span className="text-white font-bold text-xl">BDS</span>
               </div>
               <div className="ml-4">
                 <h1 className="text-2xl font-bold bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
-                  Greenfield Academy
+                  BDS Convent School
                 </h1>
                 <p className="text-sm text-gray-600 font-medium">
-                  Excellence in Education Since 2000 ✨
+                  Excellence in Education ✨
                 </p>
               </div>
             </div>
@@ -290,7 +290,7 @@ const GreenfieldAcademyHomepage: React.FC = () => {
           <div className="absolute top-1/2 left-1/2 w-64 h-64 bg-pink-300 rounded-full animate-ping"></div>
         </div>
         <div className="relative w-full px-4 sm:px-6 lg:px-8 py-24 lg:py-32">
-          <div className="mx-auto">
+          <div className="max-w-7xl mx-auto">
             <div
               className={`text-center transform transition-all duration-1000 ${
                 isVisible
@@ -310,8 +310,8 @@ const GreenfieldAcademyHomepage: React.FC = () => {
                     Shaping Futures
                   </span>
                 </h1>
-                <p className="text-xl md:text-2xl text-blue-100 mb-12 mx-auto leading-relaxed">
-                  At Greenfield Academy, we create magical learning experiences
+                <p className="text-xl md:text-2xl text-blue-100 mb-12 max-w-4xl mx-auto leading-relaxed">
+                  At BDS Convent School, we create magical learning experiences
                   that ignite curiosity, build confidence, and prepare students
                   for an amazing future! ✨
                 </p>
@@ -338,30 +338,30 @@ const GreenfieldAcademyHomepage: React.FC = () => {
       {/* Stats Section */}
       <section className="py-16 bg-gradient-to-r from-blue-50 via-purple-50 to-pink-50 border-b border-purple-100">
         <div className="w-full px-4 sm:px-6 lg:px-8">
-          <div className=" mx-auto">
+          <div className="max-w-7xl mx-auto">
             <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
               {[
                 {
-                  number: "500+",
+                  number: "1000+",
                   label: "Happy Students",
                   color: "from-blue-500 to-indigo-500",
                   delay: "0ms",
                 },
                 {
-                  number: "65+",
-                  label: "Amazing Teachers",
+                  number: "50+",
+                  label: "Dedicated Teachers",
                   color: "from-green-500 to-emerald-500",
                   delay: "100ms",
                 },
                 {
-                  number: "25",
-                  label: "Years of Magic",
+                  number: "15+",
+                  label: "Years of Service",
                   color: "from-purple-500 to-violet-500",
                   delay: "200ms",
                 },
                 {
-                  number: "98%",
-                  label: "College Success",
+                  number: "100%",
+                  label: "Excellence Focus",
                   color: "from-pink-500 to-rose-500",
                   delay: "300ms",
                 },
@@ -389,12 +389,12 @@ const GreenfieldAcademyHomepage: React.FC = () => {
       {/* Core Values Section */}
       <section className="py-20 bg-white">
         <div className="w-full px-4 sm:px-6 lg:px-8">
-          <div className="mx-auto">
+          <div className="max-w-7xl mx-auto">
             <div className="text-center mb-16">
               <h2 className="text-4xl lg:text-5xl font-bold bg-gradient-to-r from-blue-600 via-purple-600 to-pink-600 bg-clip-text text-transparent mb-6">
                 What Makes Us Special ✨
               </h2>
-              <p className="text-xl text-gray-600 mx-auto">
+              <p className="text-xl text-gray-600 max-w-3xl mx-auto">
                 The magical ingredients that make learning at Greenfield Academy
                 an amazing adventure
               </p>
@@ -430,21 +430,21 @@ const GreenfieldAcademyHomepage: React.FC = () => {
         className="py-20 bg-gradient-to-br from-blue-50 to-purple-50"
       >
         <div className="w-full px-4 sm:px-6 lg:px-8">
-          <div className="mx-auto">
+          <div className="max-w-7xl mx-auto">
             <div className="grid lg:grid-cols-2 gap-16 items-center">
               <div className="transform hover:scale-105 transition-all duration-500">
                 <h2 className="text-4xl lg:text-5xl font-bold bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent mb-8">
                   About Our Amazing School 🏫
                 </h2>
                 <p className="text-lg text-gray-700 mb-6 leading-relaxed">
-                  Since 2000, Greenfield Academy has been creating magical
-                  learning experiences where every student discovers their
-                  unique talents and builds the confidence to shine bright! ⭐
+                  BDS Convent School has been creating magical learning
+                  experiences where every student discovers their unique talents
+                  and builds the confidence to shine bright! ⭐
                 </p>
                 <p className="text-lg text-gray-700 mb-10 leading-relaxed">
-                  Our passionate educators believe that when learning is joyful
-                  and meaningful, students naturally excel and develop a
-                  lifelong love for discovery.
+                  Located in the heart of Sikandrabad, our passionate educators
+                  believe that when learning is joyful and meaningful, students
+                  naturally excel and develop a lifelong love for discovery.
                 </p>
                 <div className="space-y-4">
                   {achievements.map((achievement, index) => (
@@ -483,12 +483,12 @@ const GreenfieldAcademyHomepage: React.FC = () => {
       {/* Programs Section */}
       <section id="academics" className="py-20 bg-white">
         <div className="w-full px-4 sm:px-6 lg:px-8">
-          <div className="mx-auto">
+          <div className="max-w-7xl mx-auto">
             <div className="text-center mb-16">
               <h2 className="text-4xl lg:text-5xl font-bold bg-gradient-to-r from-green-600 via-blue-600 to-purple-600 bg-clip-text text-transparent mb-6">
                 Amazing Learning Programs 🚀
               </h2>
-              <p className="text-xl text-gray-600 mx-auto">
+              <p className="text-xl text-gray-600 max-w-3xl mx-auto">
                 Exciting educational journeys designed to help every student
                 discover their passions and achieve their dreams!
               </p>
@@ -540,7 +540,7 @@ const GreenfieldAcademyHomepage: React.FC = () => {
       {/* News & Events */}
       <section className="py-20 bg-gradient-to-br from-purple-50 to-pink-50">
         <div className="w-full px-4 sm:px-6 lg:px-8">
-          <div className="mx-auto">
+          <div className="max-w-7xl mx-auto">
             <div className="text-center mb-16">
               <h2 className="text-4xl lg:text-5xl font-bold bg-gradient-to-r from-purple-600 to-pink-600 bg-clip-text text-transparent mb-6">
                 Exciting News & Events 📰
@@ -596,7 +596,7 @@ const GreenfieldAcademyHomepage: React.FC = () => {
       {/* Testimonials */}
       <section className="py-20 bg-white">
         <div className="w-full px-4 sm:px-6 lg:px-8">
-          <div className="mx-auto">
+          <div className="max-w-7xl mx-auto">
             <div className="text-center mb-16">
               <h2 className="text-4xl lg:text-5xl font-bold bg-gradient-to-r from-green-600 to-teal-600 bg-clip-text text-transparent mb-6">
                 Happy Families & Students 💫
@@ -655,7 +655,7 @@ const GreenfieldAcademyHomepage: React.FC = () => {
           <div className="absolute top-1/2 left-1/3 w-24 h-24 bg-pink-300 rounded-full animate-ping"></div>
         </div>
         <div className="relative w-full px-4 sm:px-6 lg:px-8">
-          <div className="mx-auto">
+          <div className="max-w-7xl mx-auto">
             <div className="text-center mb-16">
               <h2 className="text-4xl lg:text-5xl font-bold mb-6">
                 Let's Connect! 🌟
@@ -670,22 +670,22 @@ const GreenfieldAcademyHomepage: React.FC = () => {
                 {
                   icon: <Phone className="w-8 h-8" />,
                   title: "Call Us",
-                  info: "(555) 123-4567",
+                  info: "7037293410",
                   sub: "Mon-Fri, 8:00 AM - 5:00 PM",
                   color: "from-green-400 to-emerald-500",
                 },
                 {
                   icon: <Mail className="w-8 h-8" />,
                   title: "Email Us",
-                  info: "hello@greenfieldacademy.edu",
+                  info: "info@bdsconventschool.edu",
                   sub: "Quick response guaranteed!",
                   color: "from-blue-400 to-indigo-500",
                 },
                 {
                   icon: <MapPin className="w-8 h-8" />,
                   title: "Visit Us",
-                  info: "1250 Learning Lane",
-                  sub: "Sunshine City, CA 94301",
+                  info: "SDM Court Sikandrabad",
+                  sub: "Bulandshahr, UP",
                   color: "from-purple-400 to-pink-500",
                 },
               ].map((contact, index) => (
@@ -719,23 +719,23 @@ const GreenfieldAcademyHomepage: React.FC = () => {
           <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-br from-blue-600 to-purple-600"></div>
         </div>
         <div className="relative w-full px-4 sm:px-6 lg:px-8">
-          <div className="mx-auto">
+          <div className="max-w-7xl mx-auto">
             <div className="grid md:grid-cols-4 gap-8 mb-12">
               <div className="md:col-span-2">
                 <div className="flex items-center mb-6 group">
                   <div className="w-12 h-12 bg-gradient-to-br from-blue-500 via-purple-500 to-pink-500 rounded-xl flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
-                    <span className="text-white font-bold text-xl">GA</span>
+                    <span className="text-white font-bold text-xl">BDS</span>
                   </div>
                   <div className="ml-4">
                     <span className="text-xl font-bold">
-                      Greenfield Academy
+                      BDS Convent School
                     </span>
                     <p className="text-gray-400 text-sm">
-                      Excellence in Education Since 2000 ✨
+                      Excellence in Education ✨
                     </p>
                   </div>
                 </div>
-                <p className="text-gray-400 leading-relaxed">
+                <p className="text-gray-400 leading-relaxed max-w-md">
                   Creating magical learning experiences that inspire students to
                   discover their unique talents and build confidence for an
                   amazing future! 🌟
@@ -788,7 +788,7 @@ const GreenfieldAcademyHomepage: React.FC = () => {
             </div>
             <div className="border-t border-gray-800 pt-8 text-center">
               <p className="text-gray-400">
-                © 2025 Greenfield Academy. Made with 💖 for amazing students and
+                © 2025 BDS Convent School. Made with 💖 for amazing students and
                 families!
               </p>
             </div>
@@ -796,7 +796,7 @@ const GreenfieldAcademyHomepage: React.FC = () => {
         </div>
       </footer>
 
-      <style jsx>{`
+      {/* <style jsx>{`
         @keyframes fade-in {
           from {
             opacity: 0;
@@ -810,7 +810,7 @@ const GreenfieldAcademyHomepage: React.FC = () => {
         .animate-fade-in {
           animation: fade-in 0.3s ease-out;
         }
-      `}</style>
+      `}</style> */}
     </div>
   );
 };
