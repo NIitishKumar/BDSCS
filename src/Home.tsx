@@ -21,6 +21,7 @@ import {
   Heart,
   Zap,
 } from "lucide-react";
+import { useNavigate } from "react-router-dom";
 
 interface NavigationItem {
   name: string;
@@ -210,6 +211,8 @@ const GreenfieldAcademyHomepage: React.FC = () => {
     },
   ];
 
+  const navigate = useNavigate();
+
   return (
     <div className="min-h-screen bg-gradient-to-br from-blue-50 via-white to-purple-50">
       {/* Header */}
@@ -231,7 +234,7 @@ const GreenfieldAcademyHomepage: React.FC = () => {
             </div>
 
             {/* Desktop Navigation */}
-            <nav className="hidden md:flex space-x-8">
+            <nav className="hidden md:flex items-center space-x-8">
               {navigation.map((item, index) => (
                 <a
                   key={item.name}
@@ -243,6 +246,14 @@ const GreenfieldAcademyHomepage: React.FC = () => {
                   <div className="absolute bottom-0 left-0 w-0 h-0.5 bg-gradient-to-r from-blue-500 to-purple-500 transition-all duration-300 hover:w-full"></div>
                 </a>
               ))}
+
+              {/* Login Button */}
+              <button
+                onClick={() => navigate("/login")}
+                className="ml-4 px-6 py-2 bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 text-white font-semibold rounded-full hover:from-blue-600 hover:via-purple-600 hover:to-pink-600 transition-all duration-300 transform hover:scale-105 hover:shadow-lg"
+              >
+                Login
+              </button>
             </nav>
 
             {/* Mobile menu button */}
@@ -275,6 +286,16 @@ const GreenfieldAcademyHomepage: React.FC = () => {
                     {item.name}
                   </a>
                 ))}
+
+                {/* Mobile Login Button */}
+                <div className="px-3 py-2">
+                  <button
+                    onClick={() => navigate("/login")}
+                    className="w-full px-6 py-3 bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 text-white font-semibold rounded-full hover:from-blue-600 hover:via-purple-600 hover:to-pink-600 transition-all duration-300 transform hover:scale-105 hover:shadow-lg"
+                  >
+                    Login
+                  </button>
+                </div>
               </div>
             </div>
           )}
@@ -301,7 +322,7 @@ const GreenfieldAcademyHomepage: React.FC = () => {
               <div className="mb-8">
                 <div className="inline-flex items-center px-6 py-3 bg-white/20 backdrop-blur-sm rounded-full text-sm font-medium mb-8 border border-white/30 transform hover:scale-105 transition-all duration-300">
                   <Award className="w-5 h-5 mr-2 animate-spin" />
-                  BDS Convent School 🏆
+                  National Blue Ribbon School 🏆
                 </div>
                 <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold mb-6 leading-tight">
                   Inspiring Excellence,
@@ -783,6 +804,12 @@ const GreenfieldAcademyHomepage: React.FC = () => {
                       </a>
                     </li>
                   ))}
+                  <li>
+                     <a
+                        href="/admin"
+                        className="text-gray-400 hover:text-white hover:translate-x-2 transform transition-all duration-200 inline-block"
+                      >Admin</a>
+                  </li>
                 </ul>
               </div>
             </div>
@@ -796,7 +823,7 @@ const GreenfieldAcademyHomepage: React.FC = () => {
         </div>
       </footer>
 
-      {/* <style jsx>{`
+      <style jsx>{`
         @keyframes fade-in {
           from {
             opacity: 0;
@@ -810,7 +837,7 @@ const GreenfieldAcademyHomepage: React.FC = () => {
         .animate-fade-in {
           animation: fade-in 0.3s ease-out;
         }
-      `}</style> */}
+      `}</style>
     </div>
   );
 };
