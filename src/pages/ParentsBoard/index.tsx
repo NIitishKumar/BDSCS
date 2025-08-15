@@ -1,14 +1,12 @@
 import React, { useState } from "react";
 import {
   Search,
-  Users,
   BookOpen,
   User,
   Phone,
   Mail,
   Calendar,
   ArrowLeft,
-  Filter,
   Download,
   GraduationCap,
   PlayCircle,
@@ -18,10 +16,6 @@ import {
   MapPin,
   UserCheck,
   AlertCircle,
-  BarChart3,
-  TrendingUp,
-  Award,
-  Star,
   FileText,
 } from "lucide-react";
 

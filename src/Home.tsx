@@ -823,7 +823,7 @@ const GreenfieldAcademyHomepage: React.FC = () => {
         </div>
       </footer>
 
-      <style jsx>{`
+      <style type="jsx">{`
         @keyframes fade-in {
           from {
             opacity: 0;
