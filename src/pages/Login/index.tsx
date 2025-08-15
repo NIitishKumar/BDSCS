@@ -294,7 +294,7 @@ const BDSLoginPage: React.FC = () => {
             <button
               onClick={handleSubmit}
               disabled={isLoading}
-              className={`w-full py-3 px-4 rounded-xl font-semibold text-white transition-all duration-300 transform hover:scale-105 hover:shadow-lg disabled:opacity-50 disabled:cursor-not-allowed ${
+              className={`w-full py-3 sm:py-3 px-4 rounded-xl font-semibold text-white transition-all duration-300 transform hover:scale-105 active:scale-95 hover:shadow-lg disabled:opacity-50 disabled:cursor-not-allowed touch-manipulation ${
                 userType === "teacher"
                   ? "bg-gradient-to-r from-purple-500 to-violet-600 hover:from-purple-600 hover:to-violet-700"
                   : "bg-gradient-to-r from-blue-500 to-indigo-600 hover:from-blue-600 hover:to-indigo-700"
@@ -303,42 +303,44 @@ const BDSLoginPage: React.FC = () => {
               {isLoading ? (
                 <div className="flex items-center justify-center">
                   <div className="w-5 h-5 border-2 border-white/30 border-t-white rounded-full animate-spin mr-2"></div>
-                  Signing In...
+                  <span className="text-sm sm:text-base">Signing In...</span>
                 </div>
               ) : (
                 <div className="flex items-center justify-center">
-                  <CheckCircle className="w-5 h-5 mr-2" />
-                  Sign In to {userType === "teacher"
-                    ? "Teacher"
-                    : "Parent"}{" "}
-                  Portal
+                  <CheckCircle className="w-4 h-4 sm:w-5 sm:h-5 mr-2" />
+                  <span className="text-sm sm:text-base">
+                    Sign In to {userType === "teacher" ? "Teacher" : "Parent"}{" "}
+                    Portal
+                  </span>
                 </div>
               )}
             </button>
           </div>
 
           {/* Divider */}
-          <div className="my-8 flex items-center">
+          <div className="my-6 sm:my-8 flex items-center">
             <div className="flex-1 border-t border-gray-200"></div>
-            <span className="px-4 text-sm text-gray-500">Need Help?</span>
+            <span className="px-3 sm:px-4 text-sm text-gray-500">
+              Need Help?
+            </span>
             <div className="flex-1 border-t border-gray-200"></div>
           </div>
 
           {/* Help Section */}
-          <div className="text-center space-y-3">
+          <div className="text-center space-y-3 sm:space-y-3">
             <p className="text-sm text-gray-600">
               Having trouble logging in? Contact us:
             </p>
-            <div className="flex justify-center space-x-6 text-sm">
+            <div className="flex flex-col sm:flex-row justify-center space-y-2 sm:space-y-0 sm:space-x-6 text-sm">
               <a
                 href="tel:7037293410"
-                className="text-blue-600 hover:text-blue-700 font-medium transition-colors duration-200 hover:underline"
+                className="text-blue-600 hover:text-blue-700 font-medium transition-colors duration-200 hover:underline py-2 px-3 rounded-lg hover:bg-blue-50"
               >
                 📞 7037293410
               </a>
               <a
                 href="mailto:info@bdsconventschool.edu"
-                className="text-purple-600 hover:text-purple-700 font-medium transition-colors duration-200 hover:underline"
+                className="text-purple-600 hover:text-purple-700 font-medium transition-colors duration-200 hover:underline py-2 px-3 rounded-lg hover:bg-purple-50"
               >
                 ✉️ Email Support
               </a>
@@ -346,12 +348,12 @@ const BDSLoginPage: React.FC = () => {
           </div>
 
           {/* Quick Access Info */}
-          <div className="mt-8 p-4 bg-gradient-to-r from-blue-50 to-purple-50 rounded-xl border border-blue-100">
-            <h4 className="font-semibold text-gray-800 mb-2 flex items-center">
+          <div className="mt-6 sm:mt-8 p-3 sm:p-4 bg-gradient-to-r from-blue-50 to-purple-50 rounded-xl border border-blue-100">
+            <h4 className="font-semibold text-gray-800 mb-2 flex items-center text-sm sm:text-base">
               <span className="text-blue-600 mr-2">ℹ️</span>
               Quick Access Guide
             </h4>
-            <div className="text-sm text-gray-600 space-y-1">
+            <div className="text-xs sm:text-sm text-gray-600 space-y-1">
               <p>
                 <strong>Parents:</strong> View grades, attendance, fees, and
                 announcements
@@ -365,8 +367,10 @@ const BDSLoginPage: React.FC = () => {
         </div>
 
         {/* School Info Footer */}
-        <div className="mt-6 text-center text-sm text-gray-600">
-          <p>BDS Convent School • SDM Court Sikandrabad, Bulandshahr</p>
+        <div className="mt-4 sm:mt-6 text-center text-xs sm:text-sm text-gray-600">
+          <p className="px-2">
+            BDS Convent School • SDM Court Sikandrabad, Bulandshahr
+          </p>
           <p className="mt-1">Excellence in Education ✨</p>
         </div>
       </div>
